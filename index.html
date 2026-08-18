@@ -36,10 +36,22 @@
             (<a href="http://firefox.com.cn/download/">Firefox</a>)
         </div>
 
-        <audio autoplay="autoplay" height="100" width="100" id="myAudio">
-            <source src="aud.mp3" type="audio/mp3" />
-            <embed height="100" width="100" src="aud.mp3" />
-        </audio>
+        <!-- LIVE CLOCK -->
+<style>
+    #clock-box {
+        position: absolute;
+        top: 30px;
+        left: 50px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 18px;
+        color: #333;
+        z-index: 9999; /* Keeps it on top of the canvas */
+    }
+</style>
+<div id="clock-box">
+    We have been together for: <span id="clock">0 days 0 hours 0 minutes 0 seconds</span>
+</div>
+
 
         <div id="wrap">
 
